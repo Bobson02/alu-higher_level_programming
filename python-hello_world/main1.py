@@ -1,2 +1,2 @@
 #/src/bin/python3
-print(f": {102-98}")
+print(f"{102-98} ")
