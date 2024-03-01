@@ -1,2 +1,2 @@
-#!/usr/bin
-print("Best School") 
+#!/bin/bash
+python3 main.py
