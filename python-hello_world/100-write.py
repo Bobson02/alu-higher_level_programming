@@ -1,3 +1,8 @@
 #!/usr/bin/python3
 import sys
-sys.write('and that piece of art is useful - Dora Korpar, 2015-10-19\n')
+
+def my_function():
+    # Your code here
+    sys.stderr.write("This is an error message\n")
+# Call the function
+my_function()
