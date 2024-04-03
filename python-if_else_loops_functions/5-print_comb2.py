@@ -1,6 +1,3 @@
 #!/usr/bin/python3
-for i in  range(0, 10):
-    for k in range(0, 10):
-        print("{0}{1}, ".format(i, k), end="")
-
-print(\n)
+for i in range(99):
+    print("{:02d}".format(i), end=", ")
