@@ -1,9 +1,12 @@
 #!/usr/bin/node
-// searches the second biggest integer in the list of arguments.
+// Get arguments, excluding the first two (node and script path)
+const args = process.argv.slice(2).map(Number);
 
-if (process.argv.length <= 3) {
+// Check if there are less than two numbers
+if (args.length < 2) {
   console.log(0);
 } else {
-  const list = process.argv.sort();
-  console.log(list.reverse()[1]);
+  // Sort arguments in descending order and remove duplicates
+  const sortedArgs = [...new Set(args)].sort((a, b) => b - a);
+  console.log(sortedArgs[2]);
 }
