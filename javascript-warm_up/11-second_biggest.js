@@ -1,11 +1,9 @@
 #!/usr/bin/node
-// Get arguments, excluding the first two (node and script path)
-const args = process.argv.slice(2).map(Number);
-// Check if there are less than two numbers
-if (args.length <= 2) {
+if (process.argv.length <= 3) {
   console.log(0);
 } else {
-  // Sort arguments in descending order and remove duplicates
-  const sortedArgs = [...new Set(args)].sort((a, b) => b - a);
-  console.log(sortedArgs[1]);
+  const args = process.argv.map(Number)
+    .slice(2, process.argv.length)
+    .sort((a, b) => a - b);
+  console.log(args[args.length - 2]);
 }

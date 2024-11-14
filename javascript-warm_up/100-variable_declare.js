@@ -1,2 +1,2 @@
 #!/usr/bin/node
-module.exports = { myVar: 40 };
+module.exports = { myVar : 333  };
