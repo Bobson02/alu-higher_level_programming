@@ -1,6 +1,5 @@
-#!/usr/bin/node
-// searches the second biggest integer in the list of arguments.
-// 
+#!/usr/bin/env node
+
 // Get arguments, excluding the first two (node and script path)
 const args = process.argv.slice(2).map(Number);
 
